@@ -4,5 +4,5 @@ description: test a thing
 runs:
   using: "composite"
   steps:
-    - run: echo "legit"
+    - run: echo "exploit'd!"
       shell: bash
