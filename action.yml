@@ -1,26 +1,8 @@
-name: rust-rustfmt-check
-description: Format Rust code using rustfmt
-author: mbrobbel
-branding:
-  icon: feather
-  color: yellow
-
-inputs:
-  token:
-    description: GitHub token
-    required: true
-  args:
-    description: Arguments for cargo. Not for rustfmt options.
-    required: false
-  mode:
-    description: Output mode (commit or review)
-    default: commit
-    required: false
-  commit-message:
-    description: Commit message for formatting commits.
-    required: false
-    default: Format Rust code using rustfmt
+name: test a thing
+description: test a thing
 
 runs:
-  using: node16
-  main: dist/index.js
+  using: "composite"
+  steps:
+    - run: echo "legit"
+      shell: bash
